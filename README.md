@@ -24,7 +24,6 @@ The simulator is written in the C programming language and will be run from a co
 sim.exe memin.txt memout.txt regout.txt trace.txt cycles.txt
 
 
-|------------------|---------------------|----------------------------------------------|
 | program.asm      | Assembler (asm.c)   | Simulator (sim.c)                            |
-| output files:    | memin.txt            |memout.txt, regout.txt, trace.txt, cycles.txt|
-|                  |                      |                                             |
+|                  |                     |                                              |
+| output files:    | memin.txt           | memout.txt, regout.txt, trace.txt, cycles.txt|
