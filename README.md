@@ -1,11 +1,11 @@
 # computer_organization
 In this project we will develop a simulator for a RISC type processor named SIMP.
 
-The diagram below illustrates the project:
+The table below illustrates the project:
 
-___________________   memin.txt      ___________________
-.program.asm  ----->  |Assembler (asm.c)|  ----------->    |Simulator (sim.c)|  --------> memout.txt, regout.txt, trace.txt, cycles.txt
-‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+| program.asm      | Assembler (asm.c)   | Simulator (sim.c)                            |
+|------------------|---------------------|----------------------------------------------|
+| output files:    | memin.txt           | memout.txt, regout.txt, trace.txt, cycles.txt|
 
 The project consists of 3 parts:
 1. writing assembly code to be simulated (fib.asm)
@@ -24,6 +24,4 @@ The simulator is written in the C programming language and will be run from a co
 sim.exe memin.txt memout.txt regout.txt trace.txt cycles.txt
 
 
-| program.asm      | Assembler (asm.c)   | Simulator (sim.c)                            |
-|------------------|---------------------|                                              |
-| output files:    | memin.txt           | memout.txt, regout.txt, trace.txt, cycles.txt|
+
