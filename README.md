@@ -6,7 +6,7 @@ The diagram below illustrates the project:
                      ___________________   memin.txt      ___________________
 program.asm  ----->  |Assembler (asm.c)|  ----------->    |Simulator (sim.c)|  --------> memout.txt, regout.txt, trace.txt, cycles.txt
                      ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-                     
+
 The project consists of 3 parts:
 1. writing assembly code to be simulated (fib.asm)
 2. writing the assembler that converts it to machine code
