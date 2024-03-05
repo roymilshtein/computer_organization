@@ -25,5 +25,5 @@ sim.exe memin.txt memout.txt regout.txt trace.txt cycles.txt
 
 
 | program.asm      | Assembler (asm.c)   | Simulator (sim.c)                            |
-|                  |                     |                                              |
+|------------------|---------------------|                                              |
 | output files:    | memin.txt           | memout.txt, regout.txt, trace.txt, cycles.txt|
