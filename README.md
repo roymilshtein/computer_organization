@@ -4,7 +4,9 @@ In this project we will develop a simulator for a RISC type processor named SIMP
 The diagram below illustrates the project:
 
 .                     ___________________   memin.txt      ___________________
+
 .program.asm  ----->  |Assembler (asm.c)|  ----------->    |Simulator (sim.c)|  --------> memout.txt, regout.txt, trace.txt, cycles.txt
+
 .                     ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 
 The project consists of 3 parts:
