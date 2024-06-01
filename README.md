@@ -1,28 +1,57 @@
-# computer_organization
-In this project we will develop a simulator for a RISC type processor named SIMP.
+# SIMP Processor Simulator
+
+This project aims to develop a simulator for a RISC type processor named SIMP. The project is divided into three main parts:
+
+1. Writing assembly code to be simulated (`fib.asm`).
+2. Developing an assembler that converts the assembly code into machine code.
+3. Creating a simulator that executes the machine code.
+
+## Project Overview
 
 The schematic below illustrates the project:
 
 ![Project Diagram](projectdiagram.png)
 
-The parts of the project which are illustrated in red are coded and prepared. The output files
-are shown in green. These output files will be generated automatically by the software.
+- **Red Parts**: Coded and prepared components.
+- **Green Parts**: Output files generated automatically by the software.
 
-The project consists of 3 parts:
-1. writing assembly code to be simulated (fib.asm)
-2. writing the assembler that converts it to machine code
-3. writing te simulator that executes the machine code
+## Project Components
 
-The assembly code is written for the SIMP processor. For more information, read project "Project Documentation.pdf".
+### 1. Assembly Code (`fib.asm`)
 
-The assembler is written in the C programming language and translates the assembler code written in text in assembler format to machine code.
-Just like the simulator the assembler is executed using the command line as shown below:
+The assembly code is written for the SIMP processor. For detailed information, refer to the [Project Documentation](Project%20Documentation.pdf).
+
+### 2. Assembler
+
+The assembler, written in C, translates the assembly code into machine code. It is executed using the command line as follows:
+
+```
 asm.exe program.asm memin.txt
-The input file program.asm contains the assembly program, the output file file memin.txt contains the memory image and is input to the simulator.
+```
 
-The simulator simulates the fetch-decode-execute loop. The run concludes when the instruction HALT is executed.
-The simulator is written in the C programming language and will be run from a command line application that receives 5 command line parameters as written in the following execution line:
+- `program.asm`: Input file containing the assembly program.
+- `memin.txt`: Output file containing the memory image, which is used as input for the simulator.
+
+### 3. Simulator
+
+The simulator, also written in C, simulates the fetch-decode-execute loop of the SIMP processor. The simulation concludes when the HALT instruction is executed. The simulator is run from the command line with the following parameters:
+
+```
 sim.exe memin.txt memout.txt regout.txt trace.txt cycles.txt
+```
+
+- `memin.txt`: Input file containing the memory image.
+- `memout.txt`: Output file for the final memory state.
+- `regout.txt`: Output file for the final state of the registers.
+- `trace.txt`: Output file tracing the execution of instructions.
+- `cycles.txt`: Output file containing the number of cycles executed.
+
+## Files
+
+- `fib.asm`: Assembly code for the SIMP processor.
+- `asm.exe`: Assembler executable.
+- `sim.exe`: Simulator executable.
+- `Project Documentation.pdf`: Detailed project documentation.
 
 
-
+For more information, refer to the [Project Documentation](Project%20Documentation.pdf).
