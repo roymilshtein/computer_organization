@@ -1,18 +1,19 @@
 # computer_organization
 In this project we will develop a simulator for a RISC type processor named SIMP.
 
-The table below illustrates the project:
+The schematic below illustrates the project:
 
-| program.asm      | Assembler (asm.c)   | Simulator (sim.c)                            |
-|------------------|---------------------|----------------------------------------------|
-| output files:    | memin.txt           | memout.txt, regout.txt, trace.txt, cycles.txt|
+![Project Diagram](projectdiagram.png)
+
+The parts of the project which are illustrated in red are coded and prepared. The output files
+are shown in green. These output files will be generated automatically by the software.
 
 The project consists of 3 parts:
 1. writing assembly code to be simulated (fib.asm)
 2. writing the assembler that converts it to machine code
 3. writing te simulator that executes the machine code
 
-The assembly code is written for the SIMP processor. For more information, read project "explanations.pdf".
+The assembly code is written for the SIMP processor. For more information, read project "Project Documentation.pdf".
 
 The assembler is written in the C programming language and translates the assembler code written in text in assembler format to machine code.
 Just like the simulator the assembler is executed using the command line as shown below:
